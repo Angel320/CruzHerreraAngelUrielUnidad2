@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>LATAM-erica</title>
+        <!-- Favicon-->
+        <link rel="icon" href="https://exploralat.am/images/shadowlight.png" />
+
+        <!-- Libreria para validar con JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+        <!-- Libreria de sweetalert 2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- ESTILO DEL POP UP-->
+        <link href="css/popup.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- MENU-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">LatAmerica</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" id="btn-abrir-popup" aria-current="page" href="#!">Iniciar</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#!">Registrarte</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- MENU-->
+
+
+        <!-- PRINCIPAL-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://www.westernunion.com/blog/wp-content/uploads/2022/03/Los_5_mejores_paises_para_visitar_en_Latinoamerica.jpg')">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="https://cdn.pixabay.com/photo/2012/04/14/16/17/globe-34474_640.png" alt="..." width="180" height="180"/>
+                <h1 class="text-white fs-3 fw-bolder">Únete a esta comunidad</h1>
+                <p class="text-white-50 mb-0">Comparte - Viaja - Disfruta</p>
+            </div>
+        </header>
+        <!-- PRINCIPAL-->
+
+        <!-- PRIMER CONTENEDOR-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Se parte de esta comunidad Latinoamérica</h2>
+                        <p class="lead">Una comunidad para compartir.</p>
+                        <p class="mb-0">Únete a esta “Social media”  completamente Latinoamérica en la cual podrás compartir y visualizar fotos sobre paisajes, culturas, eventos y más en el día a día de varias personas que viven en diferentes países, en diferentes partes, diferentes barrios, ciudades, capitales, comunidades y demás que seguro tienen algo interesante que ofrecer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRIMER CONTENEDOR-->
+
+        <!-- FONDO SECUNDARIO-->
+        <div class="py-5 bg-image-full" style="background-image: url('https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/11/shutterstock_77085319.jpg')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- FONDO SECUNDARIO-->
+
+        <!-- CONTENEDOR INTERMEDIO-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Interactúa con los demás</h2>
+                        <p class="lead">¡Adéntrate en otras culturas, tradiciones, festividades y demás!.</p>
+                        <p class="mb-0">Descubre lugares, eventos, noticias, tradiciones y demás de algún lugar de tu interés de entre toda Latinoamérica, marca tus preferencias, conoce a otras personas y descubre que a pesar de las diferencias tienen tanto en común.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENEDOR INTERMEDIO-->
+
+        <!-- PIE DE PAGINA-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; LATAM-erica Website 2023</p></div>
+        </footer>
+        <!-- PIE DE PAGINA-->
+
+
+
+ <!-- REGISTRO-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form  class="form-floating" method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+
+                    <div class="mb-3">
+                        <label>Correo</label>
+                        <input class="form-control" type="email" placeholder="ejemplo@gmail.com" name="correo" id="correo" required="requiered">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Contraseña</label>
+                        <input class="form-control" type="password" placeholder="Escribe una contraseña" name="psw" id="psw" required="requiered">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label>Confirmar Contraseña</label>
+                        <input class="form-control" type="password" placeholder="Escribe una contraseña" name="confirmar" id="confirmar" required="requiered">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label>Pais</label>
+                        <select class="form-control"  name="pais" id="pais" required="requiered">
+                            <option selected disabled>Selecciona tu país</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                            <option>Colombia</option>
+                            <option>Chile</option>
+                            <option>Ecuador</option>
+                            <option>México</option>
+                            <option>Perú</option>
+                            <option>Venezuela</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <div  class="g-recaptcha" data-sitekey="6LfMy1ceAAAAAIIsLiFMwkhYxX324aXV3hPSKoq3"></div>
+                    </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" id="enviar" disabled="">Crear cuenta</button>
+        <input type="submit" name="login" value="Login">
+
+
+<!--CAPTCHA-->
+<?php 
+    if(!empty($_POST)){
+        
+        $name = $_POST['name'];
+        $password = $_POST['password'];
+        $captcha = $_POST['g-recaptcha-response'];
+        $secret = '6LfMy1ceAAAAANvGaQLMVC3Vw3ESlzdXiov93Sjn';
+        
+        if(!$captcha){
+            echo "Por favor verifica el captcha"; 
+
+        } 
+
+        else {
+            
+                $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
+                $arr = json_decode($response, TRUE);
+                
+                if($arr['success'])
+                {
+                    $respuesta="1";
+                } 
+                else {
+                    $repuesta="1";
+                }
+        }
+    }
+
+    echo "<h3>".'$repuesta'."</h3>";
+
+?>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- REGISTRO-->
+
+
+
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SCRIPTS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/popup.js"></script>
+        <!-- Captcha-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+
+    </body>
+</html>
+
+
+
+<!--Deshabilitar y habilitar-->
+<script type="text/javascript">
+  function activar()
+  {//Inicio Función
+  
+        correo = document.getElementById('correo').value;
+        pais = document.getElementById('pais').value;
+        psw = document.getElementById('psw').value;
+        confirmar = document.getElementById('confirmar').value;
+
+        if (correo != "" && pais!== "Selecciona tu país" && psw!= "" && confirmar!= "") {
+              document.getElementById('enviar').disabled=false
+        }   else{
+              document.getElementById('enviar').disabled = true
+            }
+
+  }//Fin Función
+
+  //EVENTOS
+  document.getElementById('correo').addEventListener('keyup', activar);
+  document.getElementById('pais').addEventListener('change', activar);
+  document.getElementById('psw').addEventListener('keyup', activar);
+  document.getElementById('confirmar').addEventListener('keyup', activar);
+</script>
+
+
+<!--Alertas-->
+<script type="text/javascript">
+$(document).ready(function() {
+    let emailreg = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+        var datos = $('#form-ajax').serialize();
+
+    $("#enviar").click(function() {
+    var datos = $('#form-ajax').serialize();
+
+
+
+
+        //ESTRUCTURA DE ALERTA DEL CORREO
+        if ($("#correo").val() == "") {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'error',
+                //  Aqui pones el mensaje donde diga tittle
+                title: 'Ingrese un correo'
+            })
+            return false;
+        } 
+        //ESTRUCTURA DE ALERTA DEL EMAIL
+
+
+
+
+
+
+        //ESTRUCTURA DE ALERTA DE LA CONTRASEÑA
+            else if ($("#psw").val() == "") {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'error',
+                title: 'Contraseña incompleta, llena este campo'
+            })
+            return false;
+        }
+
+
+
+        //ESTRUCTURA DE ALERTA DEL PAIS
+        if ($("#pais").val() == "Selecciona tu país") {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'error',
+                //  Aqui pones el mensaje donde diga tittle
+                title: 'Seleciona un país'
+            })
+            return false;
+        } 
+        //ESTRUCTURA DE ALERTA DEL PAIS
+
+
+
+
+        //CONFIRMAR CONTRASEÑAS 
+
+                if ($("#confirmar").val() != $("#psw").val()) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'error',
+                //  Aqui pones el mensaje donde diga tittle
+                title: 'Las contraseñas no coinciden'
+            })
+            return false;
+        } 
+
+
+
+
+
+
+        //ESTRUCTURA DEL AJAX
+                else  {
+                $.ajax({
+                    type:"POST",
+                    url:"base/save.php",
+                    data:datos,
+                    success:function(r){
+                        if (r!=1) {
+
+        //ALERTA DE EXITO, TIENE QUE HABER UNA PARA QUE TE LIMPIE EL FORMULARIO
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'success',
+                title: 'Registro enviado'
+            })
+
+                            $('#num').val('');
+                            $('#nombre').val('');
+                            $('#tipo').val('');
+                            $('#psw').val('');
+
+
+
+                        }
+                        else {
+                            swal ("¡Se Generó un Error Al Intentar Registrar!");  
+                        }
+                    }
+                });
+                return false;
+                }
+                //CIERRE DEL ELSE DEL AJAX
+
+    });
+
+});
+</script>
