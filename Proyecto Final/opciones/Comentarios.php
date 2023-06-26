@@ -162,7 +162,7 @@ require_once "pie-secundario.php";
 
 }
 else{
-header("Location:../index.php");
+header("Location:../Mensajes/error.php");
 ob_end_flush();
 }
 ?>
